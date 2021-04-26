@@ -1,6 +1,4 @@
 const express = require('express');
 const app = express();
-app.listen(process.env.PORT || 3000, process.env.HOST || '::', err => {
-    if (err) throw err
-    console.log(`server listening on ${app.server.address().port}`)
-  })
+const port = 443;
+app.listen(port, () => console.log(Bot running on http://localhost:${port}));
